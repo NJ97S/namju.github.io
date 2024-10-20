@@ -1,3 +1,17 @@
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: black;
+}
+
+a:hover {
+  color: rgb(21, 129, 187);
+}
+
 .container {
   width: 100%;
   max-width: 50rem;
@@ -6,4 +20,31 @@
 
 h1 > span {
   color: rgb(21, 129, 187);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact > span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact .link_name {
+  width: 3.2rem;
+}
+
+.contact img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
