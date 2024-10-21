@@ -1,3 +1,11 @@
+.mobile {
+  display: none;
+}
+
+.not-mobile {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -58,4 +66,19 @@ h1 > span {
 .about .profile-img {
   width: 10rem;
   height: fit-content;
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+
+  .not-mobile {
+    display: none;
+  }
+
+  .container {
+    max-width: 90%;
+  }
 }
